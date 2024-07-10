@@ -159,37 +159,9 @@ fetchBitcoinNewsz();
 
 
 
-// async function fetchBitcoinNewsz() {
-//     const response = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
-//     const data = await response.json();
-
-//     // Example news items (replace with actual data from your API)
-//     const newsItems = [
-//         { title: "Bitcoin hits a new all-time high!" },
-//         { title: "Regulations tighten on crypto exchanges." },
-//         { title: "Major retailer now accepting Bitcoin payments." }
-//     ];
-
-//     const newsSlider = document.getElementById('news-slider');
-//     newsItems.forEach(news => {
-//         const newsItem = document.createElement('div');
-//         newsItem.classList.add('news-item');
-//         newsItem.textContent = news.title;
-//         newsSlider.appendChild(newsItem);
-//     });
-
-    // News slider functionality
-//     let currentNewsIndex = 0;
-//     const newsCount = newsItems.length;
-
-//     function showNextNews() {
-//         const items = document.querySelectorAll('.news-item');
-//         items[currentNewsIndex].style.transform = 'translateY(-100%)';
-//         currentNewsIndex = (currentNewsIndex + 1) % newsCount;
-//         items[currentNewsIndex].style.transform = 'translateY(0)';
-//     }
-
-//     setInterval(showNextNews, 3000); // Change news every 3 seconds
-// }
-
-// fetchBitcoinNews();
+document.addEventListener('DOMContentLoaded', function () {
+    const video = document.getElementById('promo-video');
+    video.play().catch(error => {
+        console.error('Error attempting to play video:', error);
+    });
+});
