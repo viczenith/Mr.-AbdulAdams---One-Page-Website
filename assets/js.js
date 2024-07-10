@@ -110,7 +110,8 @@ document.getElementById('leadForm').addEventListener('submit', function(event) {
 async function fetchBitcoinNews() {
     const apiKey = '547e165ed01c47268afcbce48b0d806c'; // Replace with your actual News API key
     const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
-    const apiUrl = `https://newsapi.org/v2/top-headlines?q=Bitcoin&from=${today}&sortBy=popularity&apiKey=${apiKey}`;
+    // const apiUrl = `https://newsapi.org/v2/top-headlines?q=Bitcoin&from=${today}&sortBy=popularity&apiKey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=547e165ed01c47268afcbce48b0d806c`;
 
     try {
         const response = await fetch(apiUrl);
@@ -164,7 +165,8 @@ fetchBitcoinNews();
 
 async function fetchBitcoinNewsz() {
     const apiKey = '547e165ed01c47268afcbce48b0d806c'; // Replace with your actual News API key
-    const apiUrl = `https://newsapi.org/v2/everything?sources=bbc-news&apiKey=${apiKey}`;
+    // const apiUrl = `https://newsapi.org/v2/everything?sources=bbc-news&apiKey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=547e165ed01c47268afcbce48b0d806c`
 
     try {
         const response = await fetch(apiUrl);
