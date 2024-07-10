@@ -62,9 +62,17 @@
 
     <section style="text-align: center;">
         <div style="display: flex; justify-content: center;">
-            <video style="width: 100%;" id="promo-video" src="assets/video/How Cryptocurrency ACTUALLY works..mp4" autoplay></video>
+            <video style="width: 100%;" src="assets/video/How Cryptocurrency ACTUALLY works..mp4" id="promo-video" autoplay controls playsinline  type="video/mp4"></video>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('promo-video');
+            video.play().catch(error => {
+                console.error('Error attempting to play video:', error);
+            });
+        });
+    </script>
     
     <section class="services">
         <div class="container">

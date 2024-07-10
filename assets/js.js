@@ -159,9 +159,9 @@ fetchBitcoinNewsz();
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const video = document.getElementById('promo-video');
-    video.play().catch(error => {
-        console.error('Error attempting to play video:', error);
-    });
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     const video = document.getElementById('promo-video');
+//     video.play().catch(error => {
+//         console.error('Error attempting to play video:', error);
+//     });
+// });
